@@ -118,8 +118,12 @@ const RecipeDetails = () => {
               <h4>What you will need</h4>
               <Grid container>
                 {step[0].content_detail[0].sub_content[1].content.map(
-                  (element) => (
-                    <LessonCard title={element.title} value={element.value} />
+                  (element, index) => (
+                    <LessonCard
+                      key={index}
+                      title={element.title}
+                      value={element.value}
+                    />
                   )
                 )}
               </Grid>
