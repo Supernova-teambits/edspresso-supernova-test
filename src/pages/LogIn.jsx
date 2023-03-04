@@ -21,6 +21,7 @@ const theme = createTheme();
 
 export default function LogIn() {
   const navigate = useNavigate();
+  // eslint-disable-next-line
   const [loading, setLoading] = useState(false);
   const setUserRole = useSetRecoilState(userRoleState);
 
